@@ -36,14 +36,22 @@ main {
     margin: 50px 0;
 }
 
-h1 {
+h1.launching-soon-text {
     font-size: 3rem;
     color: #0077FF;
+    margin-bottom: 30px;  /* Add spacing below the heading */
 }
 
-p {
+p.exciting-message {
     font-size: 1.25rem;
     color: #5BC0EB;
+    margin-bottom: 30px;  /* Add spacing below the paragraph */
+}
+
+h3.sign-up-text {
+    font-size: 1.25rem;
+    color: #0077FF;
+    margin-bottom: 40px;  /* Add spacing below the subheading */
 }
 
 input {
@@ -100,3 +108,4 @@ footer .footer-info {
     font-size: 0.875rem;
     color: #D9E2EC;
 }
+
