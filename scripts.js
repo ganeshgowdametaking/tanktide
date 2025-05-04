@@ -10,7 +10,7 @@ function submitForm() {
 
 // Countdown Timer
 function startCountdown() {
-    const launchDate = new Date("2025-06-01T00:00:00").getTime();
+    const launchDate = new Date("2025-05-31T00:00:00").getTime();
     const countdown = setInterval(() => {
         const now = new Date().getTime();
         const distance = launchDate - now;
