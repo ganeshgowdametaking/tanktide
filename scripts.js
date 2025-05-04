@@ -30,25 +30,6 @@ function startCountdown() {
     }, 1000);
 }
 
-// Particles.js Configuration
-particlesJS("particles-js", {
-    particles: {
-        number: { value: 80, density: { enable: true, value_area: 800 } },
-        color: { value: "#00e5ff" },
-        shape: { type: "circle" },
-        opacity: { value: 0.5, random: false },
-        size: { value: 3, random: true },
-        line_linked: { enable: true, distance: 150, color: "#00e5ff", opacity: 0.4, width: 1 },
-        move: { enable: true, speed: 2, direction: "none", random: false, straight: false, out_mode: "out" }
-    },
-    interactivity: {
-        detect_on: "canvas",
-        events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" }, resize: true },
-        modes: { repulse: { distance: 100, duration: 0.4 }, push: { particles_nb: 4 } }
-    },
-    retina_detect: true
-});
-
 // Lenis Smooth Scroll
 const lenis = new Lenis({
     duration: 1.2,
@@ -69,7 +50,7 @@ gsap.registerPlugin(ScrollTrigger);
 document.querySelectorAll("[data-animate='fade-in']").forEach((el) => {
     gsap.from(el, {
         opacity: 0,
-        y: 50,
+        y: 30,
         duration: 1,
         delay: el.dataset.delay || 0,
         scrollTrigger: {
@@ -82,7 +63,7 @@ document.querySelectorAll("[data-animate='fade-in']").forEach((el) => {
 
 document.querySelectorAll("[data-animate='slide-in-left']").forEach((el) => {
     gsap.from(el, {
-        x: -100,
+        x: -50,
         opacity: 0,
         duration: 1,
         scrollTrigger: {
@@ -95,7 +76,7 @@ document.querySelectorAll("[data-animate='slide-in-left']").forEach((el) => {
 
 document.querySelectorAll("[data-animate='slide-in-right']").forEach((el) => {
     gsap.from(el, {
-        x: 100,
+        x: 50,
         opacity: 0,
         duration: 1,
         scrollTrigger: {

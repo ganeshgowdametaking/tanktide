@@ -8,12 +8,16 @@
     <meta name="keywords" content="TankTide, job platform, human connections, hiring, professional networking" />
     <meta name="author" content="TankTide Team" />
     <title>TankTide - Where Real Connections Land Real Jobs</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
     <!-- Custom Cursor -->
     <div class="custom-cursor"></div>
+        <p class="hero-subtitle" data-animate="fade-in" data-delay="0.2">Find j$
 
     <!-- Header -->
     <header>
@@ -43,7 +47,6 @@
                 <h2>About TankTide</h2>
                 <p>TankTide is redefining how people get hired. Tired of cold job applications? We created a platform where meaningful conversations and human insight drive hiring—not just resumes. Connect with people who understand the job and get seen for who you are.</p>
             </div>
-            <img src="team-placeholder.jpg" alt="Team Collaboration" class="about-img" data-animate="slide-in-right" />
         </div>
     </section>
 
@@ -52,20 +55,14 @@
         <h2 data-animate="fade-in">Why TankTide?</h2>
         <div class="feature-grid">
             <div class="feature-card" data-animate="fade-in" data-delay="0.2">
-                <span class="feature-icon">🤝</span>
-                <img src="connection.jpg" alt="Human Connection" class="feature-img" />
                 <h3>Real Connections</h3>
                 <p>Build relationships with professionals who guide you to opportunities.</p>
             </div>
             <div class="feature-card" data-animate="fade-in" data-delay="0.4">
-                <span class="feature-icon">💼</span>
-                <img src="opportunity.jpg" alt="Opportunities" class="feature-img" />
                 <h3>Real Opportunities</h3>
                 <p>Access jobs that match your skills through trusted insights.</p>
             </div>
             <div class="feature-card" data-animate="fade-in" data-delay="0.6">
-                <span class="feature-icon">🏆</span>
-                <img src="success.jpg" alt="Success" class="feature-img" />
                 <h3>Real Success</h3>
                 <p>Land roles where you thrive, with teams that value you.</p>
             </div>
@@ -74,15 +71,12 @@
 
     <!-- Footer -->
     <footer>
-        <div class="footer-links">
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-            <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" class="linkedin-btn">Follow us on LinkedIn</a>
-        </div>
+        <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" class="linkedin-btn">Follow us on LinkedIn</a>
         <p>© 2025 TankTide. All rights reserved.</p>
     </footer>
 
     <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lenis@1.0.42/dist/lenis.min.js"></script>
