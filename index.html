@@ -1,56 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="TankTide: Find jobs through real connections, not portals. Launching soon!" />
+    <meta name="keywords" content="TankTide, job platform, human connections, hiring, professional networking" />
+    <meta name="author" content="TankTide Team" />
+    <title>TankTide - Where Real Connections Land Real Jobs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="animated-bg"></div>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Header -->
     <header>
-        <h1 class="launching-soon-text">Launching Soon</h1>
-        <p class="exciting-message">We’re working hard to bring you something exciting. Stay tuned!</p>
+        <img src="logo.png" alt="TankTide Logo" class="logo" />
     </header>
-    <main>
-        <section>
-            <h2>About Us</h2>
-            <p>We are building something new and exciting. Check back soon for more updates!</p>
-        </section>
-        <section>
-            <h2>Follow Us</h2>
-            <p>Stay updated with our latest news and updates by following us on social media.</p>
-            <a href="https://www.linkedin.com/in/yourprofile" class="social-link linkedin-btn">LinkedIn</a>
-        </section>
 
-        <section class="vision-section">
-            <h2>Our Vision</h2>
-            <p>Empowering individuals to showcase achievements, build meaningful connections, and grow their careers.</p>
-        </section>
+    <!-- Hero Section -->
+    <section class="hero" data-scroll>
+        <h1 class="hero-title" data-animate="fade-in">TankTide is Launching Soon!</h1>
+        <p class="hero-subtitle" data-animate="fade-in" data-delay="0.2">Find jobs through people, not portals.</p>
+        <div id="countdown" class="countdown" data-animate="fade-in" data-delay="0.4">
+            <div><span id="days">00</span> Days</div>
+            <div><span id="hours">00</span> Hours</div>
+            <div><span id="minutes">00</span> Minutes</div>
+            <div><span id="seconds">00</span> Seconds</div>
+        </div>
+        <div class="signup-form" data-animate="fade-in" data-delay="0.6">
+            <input type="email" id="email" placeholder="Enter your email" />
+            <button onclick="submitForm()">Sign Up</button>
+        </div>
+    </section>
 
-        <section class="features">
-            <div class="feature-card">
-                <h3>Showcase Yourself</h3>
-                <p>Post certificates, awards, and achievements in a visual, engaging format.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Referral-Based Jobs</h3>
-                <p>Discover jobs where current employees post referrals and you can apply with a strong advantage.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Custom Avatars</h3>
-                <p>Personalize your profile with interest-based avatars that reflect your passions and career goals.</p>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer-content">
-            <a href="https://www.linkedin.com/in/yourprofile" class="linkedin-btn">LinkedIn</a>
-            <div class="footer-info">
-                <p>&copy; 2025 My Website. All rights reserved.</p>
+    <!-- About Section -->
+    <section class="about" data-scroll>
+        <div class="about-content">
+            <div class="about-text" data-animate="slide-in-left">
+                <h2>About TankTide</h2>
+                <p>TankTide is redefining how people get hired. Tired of cold job applications? We created a platform where meaningful conversations and human insight drive hiring—not just resumes. Connect with people who understand the job and get seen for who you are.</p>
             </div>
         </div>
+    </section>
+
+    <!-- Why TankTide Section -->
+    <section class="features" data-scroll>
+        <h2 data-animate="fade-in">Why TankTide?</h2>
+        <div class="feature-grid">
+            <div class="feature-card" data-animate="fade-in" data-delay="0.2">
+                <h3>Real Connections</h3>
+                <p>Build relationships with professionals who guide you to opportunities.</p>
+            </div>
+            <div class="feature-card" data-animate="fade-in" data-delay="0.4">
+                <h3>Real Opportunities</h3>
+                <p>Access jobs that match your skills through trusted insights.</p>
+            </div>
+            <div class="feature-card" data-animate="fade-in" data-delay="0.6">
+                <h3>Real Success</h3>
+                <p>Land roles where you thrive, with teams that value you.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" class="linkedin-btn">Follow us on LinkedIn</a>
+        <p>© 2025 TankTide. All rights reserved.</p>
     </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
-
