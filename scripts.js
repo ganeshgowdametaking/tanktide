@@ -10,8 +10,8 @@ function submitForm() {
 
 // Countdown Timer
 function startCountdown() {
-    // Temporary test date: May 10, 2025, 00:00:00 UTC
-    const launchDate = new Date("2025-05-10T00:00:00Z").getTime();
+    // Set launch date to May 31, 2025, 00:00:00 UTC using ISO string
+    const launchDate = new Date("2025-05-31T00:00:00Z").getTime();
     const countdown = setInterval(() => {
         const now = new Date().getTime();
         const distance = launchDate - now;

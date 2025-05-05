@@ -47,23 +47,19 @@ header {
     filter: drop-shadow(0 0 5px #00C4B4);
 }
 
+/* Wrapper for hero and about sections to share the background */
+.hero-about-wrapper {
+    position: relative;
+    background: url('employee-running.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; /* Keeps the background static while scrolling */
+}
+
 .hero {
     text-align: center;
     padding: 150px 20px 60px;
     color: #fff;
     position: relative;
-    background: url('employee-running.png') no-repeat bottom right;
-    background-size: 300px;
-    animation: runEmployee 10s linear infinite;
-}
-
-@keyframes runEmployee {
-    0% {
-        background-position: 100% bottom;
-    }
-    100% {
-        background-position: -300px bottom;
-    }
 }
 
 .hero-title {
@@ -152,7 +148,7 @@ button:hover {
 
 .about {
     padding: 100px 20px;
-    background: #000000;
+    position: relative;
 }
 
 .about-content {
@@ -306,7 +302,7 @@ footer p {
 
 @media (max-width: 768px) {
     .hero {
-        background-size: 200px;
+        padding: 100px 20px 40px;
     }
     .hero-title {
         font-size: 3rem;

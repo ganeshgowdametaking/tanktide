@@ -1,4 +1,4 @@
-<!-- Force deploy May 2025 v13 -->
+<!-- Force deploy May 2025 v15 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,31 +21,34 @@
         <img src="logo.png" alt="TankTide Logo" class="logo" />
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" data-scroll>
-        <h1 class="hero-title" data-animate="fade-in">TankTide is Launching Soon!</h1>
-        <p class="hero-subtitle" data-animate="fade-in" data-delay="0.2">Find jobs through people, not portals.</p>
-        <div id="countdown" class="countdown" data-animate="fade-in" data-delay="0.4">
-            <div><span id="days">00</span> Days</div>
-            <div><span id="hours">00</span> Hours</div>
-            <div><span id="minutes">00</span> Minutes</div>
-            <div><span id="seconds">00</span> Seconds</div>
-        </div>
-        <div class="signup-form" data-animate="fade-in" data-delay="0.6">
-            <input type="email" id="email" placeholder="Enter your email" />
-            <button onclick="submitForm()">Sign Up</button>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" data-scroll>
-        <div class="about-content">
-            <div class="about-text" data-animate="slide-in-left">
-                <h2>About TankTide</h2>
-                <p>TankTide is redefining how people get hired. Tired of cold job applications? We created a platform where meaningful conversations and human insight drive hiring—not just resumes. Connect with people who understand the job and get seen for who you are.</p>
+    <!-- Hero and About Wrapper -->
+    <div class="hero-about-wrapper">
+        <!-- Hero Section -->
+        <section class="hero" data-scroll>
+            <h1 class="hero-title" data-animate="fade-in">TankTide is Launching Soon!</h1>
+            <p class="hero-subtitle" data-animate="fade-in" data-delay="0.2">Find jobs through people, not portals.</p>
+            <div id="countdown" class="countdown" data-animate="fade-in" data-delay="0.4">
+                <div><span id="days">00</span> Days</div>
+                <div><span id="hours">00</span> Hours</div>
+                <div><span id="minutes">00</span> Minutes</div>
+                <div><span id="seconds">00</span> Seconds</div>
             </div>
-        </div>
-    </section>
+            <div class="signup-form" data-animate="fade-in" data-delay="0.6">
+                <input type="email" id="email" placeholder="Enter your email" />
+                <button onclick="submitForm()">Sign Up</button>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" data-scroll>
+            <div class="about-content">
+                <div class="about-text" data-animate="slide-in-left">
+                    <h2>About TankTide</h2>
+                    <p>TankTide is redefining how people get hired. Tired of cold job applications? We created a platform where meaningful conversations and human insight drive hiring—not just resumes. Connect with people who understand the job and get seen for who you are.</p>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <!-- Why TankTide Section -->
     <section class="features" data-scroll>
