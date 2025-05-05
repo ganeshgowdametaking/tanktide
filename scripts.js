@@ -10,8 +10,8 @@ function submitForm() {
 
 // Countdown Timer
 function startCountdown() {
-    // Set launch date to May 31, 2025, 00:00:00 UTC using ISO string
-    const launchDate = new Date("2025-05-31T00:00:00Z").getTime();
+    // Temporary test date: May 10, 2025, 00:00:00 UTC
+    const launchDate = new Date("2025-05-10T00:00:00Z").getTime();
     const countdown = setInterval(() => {
         const now = new Date().getTime();
         const distance = launchDate - now;
@@ -34,19 +34,24 @@ function startCountdown() {
     }, 1000);
 }
 
-// Lenis Smooth Scroll
-const lenis = new Lenis({
-    duration: 1.2,
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-    smooth: true
-});
+// Lenis Smooth Scroll with Fallback
+let lenis;
+if (typeof Lenis !== "undefined") {
+    lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        smooth: true
+    });
 
-function raf(time) {
-    lenis.raf(time);
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+
     requestAnimationFrame(raf);
+} else {
+    console.warn("Lenis is not defined. Smooth scrolling is disabled.");
 }
-
-requestAnimationFrame(raf);
 
 // GSAP Animations
 gsap.registerPlugin(ScrollTrigger);
@@ -107,5 +112,7 @@ document.querySelectorAll("button, a, .feature-card").forEach((el) => {
     });
 });
 
-// Initialize
-startCountdown();
+// Initialize Countdown on Window Load
+window.onload = function() {
+    startCountdown();
+};
