@@ -15,6 +15,9 @@ function startCountdown() {
     const countdown = setInterval(() => {
         const now = new Date().getTime();
         const distance = launchDate - now;
+        console.log("Launch Date:", new Date(launchDate));
+        console.log("Current Time:", new Date(now));
+        console.log("Distance (ms):", distance);
         if (distance < 0) {
             clearInterval(countdown);
             document.getElementById("countdown").innerHTML = "<h3>We're Live!</h3>";
